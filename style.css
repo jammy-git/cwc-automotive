@@ -715,7 +715,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .footer-logos .logos-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-logos .logos-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
 .footer-logos img {
@@ -807,6 +807,87 @@ footer {
 .footer-social svg {
   width: 20px;
   height: 20px;
+}
+
+/* ===== EuroRepar ===== */
+.eurorepar-badge {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: 8px;
+  max-width: 700px;
+}
+
+.eurorepar-badge .eurorepar-logo {
+  height: 50px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.eurorepar-badge p {
+  font-size: 0.95rem;
+  margin-bottom: 0;
+  color: #ccc;
+}
+
+.eurorepar-footer-logo {
+  height: 40px !important;
+  width: auto;
+}
+
+.eurorepar-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.eurorepar-section-logo {
+  flex-shrink: 0;
+}
+
+.eurorepar-section-logo img {
+  height: 60px;
+  width: auto;
+}
+
+.eurorepar-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.eurorepar-section p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #555;
+}
+
+.eurorepar-section a {
+  color: #f5c518;
+  font-weight: 600;
+}
+
+.eurorepar-section a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .eurorepar-badge {
+    flex-direction: column;
+    text-align: center;
+  }
+  .eurorepar-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /* ===== Background variants ===== */
