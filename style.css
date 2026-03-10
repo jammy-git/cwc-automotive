@@ -228,8 +228,25 @@ nav a.active {
 .page-hero {
   background: #2a2a2a;
   color: #fff;
-  padding: 4rem 0;
+  padding: 5rem 0;
   text-align: center;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.page-hero .container {
+  position: relative;
 }
 
 .page-hero h1 {
@@ -237,21 +254,7 @@ nav a.active {
   font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.breadcrumb {
-  margin-top: 1rem;
-  font-size: 0.875rem;
-  color: #ccc;
-}
-
-.breadcrumb a {
-  color: #ccc;
-  transition: color 0.2s;
-}
-
-.breadcrumb a:hover {
-  color: #f5c518;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 /* ===== Service Cards ===== */
